@@ -38,8 +38,7 @@ try:
        back_fromfunction = get_fruityvice_data(fruit_choice)
        streamlit.dataframe(back_from_function)
 
-#don't run anything past here while we troubleshoot
-streamlit.stop()
+
 
 #import snowflake.connector
 
