@@ -38,8 +38,6 @@ try:
        back_fromfunction = get_fruityvice_data(fruit_choice)
        streamlit.dataframe(back_from_function)
 
-
-
 #Snowflake-related functions
 def get_fruit_load_list():
     with my_cnx.cursor() as my_cur:
@@ -54,13 +52,6 @@ if streamlit.button('Get Fruit Load List'):
     
 
          
-
-
-my_data_row = my_cur.fetchone()
-streamlit.header("The fruits load list contains:")
-streamlit.dataframe(my_data_row)
-
-
 
 streamlit.header("The fruits load list contains:")
 streamlit.dataframe(my_data_rows)
